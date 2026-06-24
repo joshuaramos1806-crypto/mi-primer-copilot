@@ -18,7 +18,7 @@ if not api_key:
 else:
     # Configurar el modelo de inteligencia artificial
    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-    model = genai.GenerativeModel("gemini-1.5-flash")
+   model = genai.GenerativeModel("gemini-1.5-flash")
 
     # Crear la memoria del chat si no existe en la sesión actual
     if "messages" not in st.session_state:
