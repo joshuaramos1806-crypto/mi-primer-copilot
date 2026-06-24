@@ -10,7 +10,7 @@ st.write("Tu asistente inteligente de nueva generación")
 # Conectar con la API usando tus Secrets
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
-model = genai.GenerativeModel("gemini-1.0-pro")
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Inicializar el historial de mensajes
 if "messages" not in st.session_state:
