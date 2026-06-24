@@ -17,7 +17,7 @@ if not api_key:
     st.error("Falta la configuración de seguridad de la API Key. Por favor, revísala en Advanced Settings.")
 else:
     # Configurar el modelo de inteligencia artificial
-    genai.configure(api_key=api_key)
+   genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
     model = genai.GenerativeModel("gemini-1.5-flash")
 
     # Crear la memoria del chat si no existe en la sesión actual
