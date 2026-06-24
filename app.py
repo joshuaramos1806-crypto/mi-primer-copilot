@@ -1,11 +1,11 @@
-import streamlit as str
+import streamlit as st
 import google.generativeai as genai
 
 # Configuración de la página
 st.set_page_config(page_title="Mi Copilot Personalizado", page_icon="🤖", layout="centered")
 
 st.title("🤖 Mi Copilot Personalizado")
-st.subtitle("Tu asistente inteligente de nueva generación")
+st.write("Tu asistente inteligente de nueva generación")
 
 # Conectar con la API usando tus Secrets
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
